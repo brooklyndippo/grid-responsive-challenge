@@ -144,6 +144,40 @@
       transform: rotate(15deg);
     }
 
+    @media screen and (max-width: 800px) {
+      .dashboard {
+        /* border: 1px solid #000; */
+        max-width: 90vw;
+        /* Layout the dashboard grid */
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: "t t t"  
+                             "m m c"  
+                             "p p p"
+                             "w l l"
+                             "g g g"; 
+        grid-template-rows: 100px 200px 200px 150px 250px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .dashboard {
+        /* border: 1px solid #000; */
+        max-width: 90vw;
+        /* Layout the dashboard grid */
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: "t t"  
+                             "m c"  
+                             "w l"
+                             "p p"
+                             "g g"; 
+        grid-template-rows: 100px 200px 200px 150px 250px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
   </style>
 </head>
 <body>
